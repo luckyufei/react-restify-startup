@@ -1,0 +1,34 @@
+@import "mixins/flexbox";
+@import 'mixins/reset';
+@import "mixins/utils";
+@import "./font";
+
+body {
+  font-family: 'microsoft yahei' ,SFHeitiSC, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+:global(.hidden){
+  display: none;
+}
+
+:global(.clearfix) {
+  @include clearfix();
+}
+
+:global(.fr) {
+  float: right;
+}
+
+:global(.fl) {
+  float: left;
+}
+
+:global(.strong) {
+  font-size: 20px;
+  color: #21292F;
+  line-height: 25px;
+}
+
+h3 a {
+  color: #fff;
+}
